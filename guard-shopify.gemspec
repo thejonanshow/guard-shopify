@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "guard-shopify"
   s.version     = Guard::Shopify::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Jonan Scheffler"]
+  s.email       = ["jonanscheffler+gem@gmail.com"]
+  s.homepage    = "http://www.1337807.com"
+  s.summary     = "Gem to upload Shopify template modifications."
+  s.description     = %q{This gem allows guard to watch a Shopify template directory for changes and then upload them immediately to Shopify using their API.}
 
   s.rubyforge_project = "guard-shopify"
 
@@ -19,5 +19,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
+  s.add_dependency 'guard', '>= 0.10.0'
   s.add_dependency 'shopify_api', '~> 2.2.0'
 end
