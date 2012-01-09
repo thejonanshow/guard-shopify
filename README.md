@@ -12,7 +12,7 @@ Install the gem:
 
     $ gem install guard-shopify
 
-Add it to your Gemfile (inside development group):
+Add guard-shopify to your Gemfile (inside the development group):
 
 ``` ruby
 group :development do
