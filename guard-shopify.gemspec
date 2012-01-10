@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.version     = Guard::Shopify::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jonan Scheffler"]
-  s.email       = ["jonanscheffler+gem@gmail.com"]
-  s.homepage    = "http://www.1337807.com"
+  s.email       = ["jonanscheffler+rubygems@gmail.com"]
+  s.homepage    = "https://github.com/1337807/guard-shopify"
   s.summary     = "Gem to upload Shopify template modifications."
   s.description     = %q{This gem allows guard to watch a Shopify template directory for changes and then upload them immediately to Shopify using their API.}
 
