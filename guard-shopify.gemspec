@@ -4,7 +4,7 @@ require "guard/shopify/version"
 
 Gem::Specification.new do |s|
   s.name        = "guard-shopify"
-  s.version     = Guard::Shopify::VERSION
+  s.version     = Guard::ShopifyVersion::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Jonan Scheffler"]
   s.email       = ["jonanscheffler+rubygems@gmail.com"]
@@ -22,4 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'guard', '>= 0.10.0'
   s.add_dependency 'shopify_api', '~> 2.2.0'
   s.add_dependency 'ptools', '~> 1.2.1'
+
+  s.add_development_dependency 'rspec', '~> 2.8.0'
+  s.add_development_dependency 'guard-rspec', '~> 0.6.0'
 end

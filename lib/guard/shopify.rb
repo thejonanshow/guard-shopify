@@ -26,9 +26,7 @@ module Guard
 
     def get_main_theme_id
       themes = ShopifyAPI::Theme.find(:all)
-
       main_theme = themes.select {|t| t.role == 'main'}.first
-
       @theme_id = main_theme.id
     end
 
