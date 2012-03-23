@@ -32,4 +32,24 @@ describe Guard::Shopify do
       subject.run_on_change([path])
     end
   end
+
+  context "start" do
+    it "should prompt the user for their credentials if the config file doesn't exist" do
+      File.stub!(:exists?) { false }
+      subject.should_receive(:set_config).and_return true
+      subject.start
+    end
+  end
+
+  context "set_config" do
+    it "should write the credentials to a config file" do
+      File.should_receive(:open).with "#{ENV['HOME']}/.guard_shopify", "w"
+      subject.stub!(:gets).and_return('Foo')
+      subject.send(:set_config)
+    end
+
+    it "should accurately to the user the location of the config file" do
+      subject.should_receive(:puts).with "Credentials saved to #{ENV['HOME']}/.guard_shopify"
+    end
+  end
 end
