@@ -24,4 +24,4 @@ Add the guard definition to your Guardfile:
 
     $ guard init guard
 
-When first run the gem will prompt you to enter your API key, password and store url. Follow [these instructions](http://http://wiki.shopify.com/Shopify_Textmate_Bundle) to get this information (you only need to do it once).
+When first run the gem will prompt you to enter your API key, password and store url. Follow [these instructions](http://wiki.shopify.com/Shopify_Textmate_Bundle) to get this information (you only need to do it once).
