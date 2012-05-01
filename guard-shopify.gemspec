@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'guard', '>= 0.10.0'
-  s.add_dependency 'shopify_api', '~> 2.2.0'
+  s.add_dependency 'shopify_api', '~> 3.0.0'
   s.add_dependency 'ptools', '~> 1.2.1'
 
   s.add_development_dependency 'rspec', '~> 2.8.0'
