@@ -69,7 +69,7 @@ module Guard
           puts e.message
         end
         
-        if File.binary?(p) && remote_asset
+        if (File.binary?(p) || File.image?(p)) && remote_asset
           upload_binary_asset(p, remote_asset)
         elsif remote_asset
           upload_text_asset(p, remote_asset)
